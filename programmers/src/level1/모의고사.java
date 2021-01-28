@@ -19,9 +19,9 @@ public class 모의고사 {
 		}
 		int max = Math.max(count1, Math.max(count2, count3));
 		ArrayList<Integer> maxPerson = new ArrayList<Integer>();
-		if(max == count1) maxPerson.add(count1);
-		if(max == count2) maxPerson.add(count2);
-		if(max == count3) maxPerson.add(count3);
+		if(max == count1) maxPerson.add(1);
+		if(max == count2) maxPerson.add(2);
+		if(max == count3) maxPerson.add(3);
 		answer = new int[maxPerson.size()];
 		for (int i = 0; i < answer.length; i++) {
 			answer[i] = maxPerson.get(i);
