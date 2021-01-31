@@ -16,7 +16,6 @@ public class SumGauss {
 		int sum = 0;	// 합
 		
 		sum = (1 + n) * (n / 2);
-		System.out.println(sum);
 		
 		if(n % 2 == 1) {
 			sum += Math.ceil((float) n / 2);
