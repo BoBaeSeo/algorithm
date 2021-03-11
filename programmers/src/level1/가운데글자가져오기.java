@@ -10,8 +10,6 @@ public class 가운데글자가져오기 {
         } else {
         	answer = s.substring(middle, middle+1);
         }
-        System.out.println(middle);
-        System.out.println(answer);
         return answer;
     }
 	
