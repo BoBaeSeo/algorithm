@@ -46,11 +46,4 @@ public class 소수찾기 {
         return answer;
     }
 	
-	public static void main(String[] args) {
-		int n = 99999;
-		int a = solution2(n);
-		int b = solution(n);
-		
-		System.out.println(a + " : " + b);
-	}
 }
