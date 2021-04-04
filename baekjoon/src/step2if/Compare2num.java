@@ -1,4 +1,4 @@
-package stpe2if;
+package step2if;
 
 import java.util.Scanner;
 
