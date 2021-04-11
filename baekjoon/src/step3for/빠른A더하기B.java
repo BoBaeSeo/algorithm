@@ -16,7 +16,6 @@ public class 빠른A더하기B {
 			StringTokenizer st;
 			int n = Integer.parseInt(br.readLine());
 			
-			String result = "";
 			for(int i = 0; i < n; i++) {
 				st = new StringTokenizer(br.readLine());
 				int a = Integer.parseInt(st.nextToken());

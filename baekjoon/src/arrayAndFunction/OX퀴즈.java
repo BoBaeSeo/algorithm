@@ -10,7 +10,7 @@ public class OX퀴즈 {
 		
 		for(int i = 0; i < n; i++) {
 			char[] arr = scan.next().toCharArray();
-			int num = 0, sum = 0;;
+			int num = 0, sum = 0;
 			for(char c : arr) {
 				if(c == 'O') {
 					num++;
