@@ -14,17 +14,17 @@ public class 수찾기 {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer st;
 		int n = Integer.parseInt(br.readLine());
-		ArrayList<Integer> arrN = new ArrayList<Integer>();
+		int[] arrN = new int[n];
 		
 		st = new StringTokenizer(br.readLine());
 		for(int i = 0; i < n; i++) {
-			arrN.add(Integer.parseInt(st.nextToken()));
+			arrN[i] = Integer.parseInt(st.nextToken());
 		}
 		
 		int m = Integer.parseInt(br.readLine());
 		st = new StringTokenizer(br.readLine());
 		for(int i = 0; i < m; i++) {
-			if(arrN.contains(Integer.parseInt(st.nextToken()))) {
+			if(contain(Integer.parseInt(st.nextToken()), arrN)) {
 				bw.write(1 + "\n");
 			} else {
 				bw.write(0 + "\n");
@@ -32,5 +32,12 @@ public class 수찾기 {
 		}
 		br.close();
 		bw.close();
+	}
+	
+	public static boolean contain(int num, int[] arr) {
+		for(int i : arr) {
+			if(i == num) return true;
+		}
+		return false;
 	}
 }
