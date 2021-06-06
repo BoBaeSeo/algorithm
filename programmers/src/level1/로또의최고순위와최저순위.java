@@ -11,8 +11,9 @@ public class 로또의최고순위와최저순위 {
         	}
         	if(i == 0) countZ++;
         }
-        int result = countR + countZ;
-		int[] answer = {7 - result, 7 - (result - countZ) > 6 ? 6 : 7 - (result - countZ)};
+        int upResult = 7 - (countR + countZ) > 6 ? 6 : 7 - (countR + countZ);
+        int downResult = 7 - countR > 6 ? 6 : 7 - countR;
+		int[] answer = {upResult, downResult};
         return answer;
     }
 }
