@@ -15,17 +15,13 @@ public class 가장큰수 {
                 long maxCheck = 0;
                 o1 = new String(new char[3]).replace("\0", o1);
                 o2 = new String(new char[3]).replace("\0", o2);
-                try {
-                    String tmpNum = lengthCheck ? o1.substring(0, o2.length()) : o2.substring(0, o1.length());
-                    if (lengthCheck) {
-                        maxCheck = Long.parseLong(o2) - Long.parseLong(tmpNum);
-                    } else {
-                        maxCheck = Long.parseLong(tmpNum) - Long.parseLong(o1);
-                    }
-                } catch (Exception e) {
-                    System.out.println(e);
+                String tmpNum = lengthCheck ? o1.substring(0, o2.length()) : o2.substring(0, o1.length());
+                if (lengthCheck) {
+                    maxCheck = Long.parseLong(o2) - Long.parseLong(tmpNum);
+                } else {
+                    maxCheck = Long.parseLong(tmpNum) - Long.parseLong(o1);
                 }
-                return maxCheck > 0 ?  1 : maxCheck == 0 ? 0 : -1;
+                return maxCheck > 0 ? 1 : maxCheck == 0 ? 0 : -1;
             }
         });
 
